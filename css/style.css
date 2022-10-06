@@ -1,0 +1,629 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+*,
+::after,
+::before {
+  box-sizing: content-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(210, 223, 230);
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  font-size: 20px;
+}
+body body::-webkit-scrollbar {
+  width: 5px;
+}
+body body::-webkit-scrollbar-thumb {
+  background-color: rgba(3, 19, 35, 0.89);
+  border-radius: 5px;
+}
+
+header {
+  grid-area: header;
+}
+header .color {
+  background: linear-gradient(90deg, rgba(210, 223, 230, 0.4262079832) 25%, rgba(3, 19, 35, 0.49) 50%, rgba(3, 19, 35, 0.89) 83%);
+}
+header .navbar-dark .navbar-toggler-icon {
+  background-image: url(../img/iconosApp/icons8-menú.svg);
+}
+header .navbar {
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+header .contenedorBotonRedes {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+header .contenedorBotonRedes .redes {
+  padding-left: 1em;
+}
+header .contenedorBotonRedes .redes a {
+  padding-right: 0.5em;
+}
+header .contenedorBotonRedes .redes a img {
+  width: 1.1em;
+}
+header .logoBts {
+  padding-right: 2%;
+}
+header .logoBts img {
+  width: 3.5em;
+}
+header .contenedornav ul {
+  font-size: 18px;
+  padding-left: 1em;
+}
+header .contenedornav ul li {
+  padding: 0.5em;
+  padding-bottom: 0;
+  list-style-type: none;
+}
+header .contenedornav ul li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  grid-area: main;
+}
+
+.formulario .container {
+  margin: 3em auto;
+  margin-top: 2em;
+  max-width: 250px;
+  background-color: rgb(181, 199, 207);
+  border-radius: 0.5em;
+  padding: 1em;
+  text-align: center;
+}
+.formulario .container form {
+  height: 8em;
+}
+.formulario .container .row {
+  display: flex;
+  margin-top: calc(var(--bs-gutter-y) * 0);
+  margin-right: calc(var(--bs-gutter-x) * 0.5);
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-around;
+  font-size: 14px;
+}
+.formulario .container .row .tituloForm {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+}
+.formulario .container .row .col-auto {
+  height: 2em;
+}
+.formulario .container .row .col-auto input {
+  width: 10em;
+}
+.formulario .container .row .col-auto .btn {
+  padding: 0.2rem 1rem;
+}
+.formulario .container .row .col-auto .btn-primary {
+  color: #fff;
+  background-color: rgb(3, 19, 35);
+  border-color: rgb(3, 19, 35);
+}
+
+footer {
+  grid-area: footer;
+  line-height: 1rem;
+  text-align: end;
+  padding: 0.5em;
+  background: linear-gradient(90deg, rgba(210, 223, 230, 0.4262079832) 25%, rgba(3, 19, 35, 0.49) 50%, rgba(3, 19, 35, 0.89) 83%);
+}
+footer p {
+  color: white;
+  font-size: 12px;
+  padding-right: 1em;
+  margin-bottom: 0rem;
+}
+footer strong {
+  color: white;
+  font-size: 12px;
+  padding-right: 1em;
+}
+
+.primeraSeccion h1 {
+  color: black;
+  text-align: center;
+  text-shadow: 8px 10px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  font-size: 2.5em;
+  padding: 3%;
+  padding-top: 4%;
+}
+.primeraSeccion h2 {
+  color: black;
+  text-align: center;
+  padding-left: 0%;
+  padding-top: 8%;
+  margin-bottom: 0rem;
+  font-size: 1.3em;
+}
+.primeraSeccion .informacionBts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.primeraSeccion .informacionBts iframe {
+  height: 14em;
+  width: 90%;
+  padding: 1em;
+}
+.primeraSeccion .informacionBts p {
+  text-align: justify;
+  padding: 1em;
+  padding-right: 0.5em;
+  padding-bottom: 0.5em;
+  padding-top: 0em;
+  margin-right: 0.5em;
+  width: 90%;
+  height: 14em;
+  overflow: scroll;
+}
+.primeraSeccion .informacionBts p .parrafoBiografia::-webkit-scrollbar {
+  width: 4px;
+}
+.primeraSeccion .informacionBts p .parrafoBiografia::-webkit-scrollbar-thumb {
+  background-color: rgba(3, 19, 35, 0.89);
+  border-radius: 5px;
+}
+.primeraSeccion .informacionBts p span {
+  font-weight: bold;
+}
+
+.segundaSeccion h2 {
+  color: black;
+  text-align: center;
+  padding-left: 0%;
+  padding-top: 8%;
+  margin-bottom: 0rem;
+  font-size: 1.3em;
+}
+.segundaSeccion .contenedorImagenes {
+  background-color: rgb(210, 223, 230);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.segundaSeccion .contenedorImagenes .imagenesMiembros {
+  width: 12em;
+  background-color: rgb(3, 19, 35);
+  margin: 3em;
+  margin-top: 1em;
+}
+.segundaSeccion .contenedorImagenes .imagenesMiembros .miembrosFotos {
+  width: 100%;
+}
+.segundaSeccion .contenedorImagenes .imagenesMiembros .nombres {
+  width: 100%;
+  margin-bottom: 0rem;
+  text-align: center;
+  font-size: 1em;
+  color: white;
+}
+.segundaSeccion .contenedorImagenes .imagenesMiembros .fechas {
+  width: 100%;
+  margin-bottom: 0rem;
+  text-align: center;
+  font-size: 0.8em;
+  color: white;
+}
+
+.tituloTour h1 {
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  font-size: 4.5em;
+  text-shadow: 8px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.infoTours {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.infoTours .toursDiv {
+  width: 50%;
+  padding: 1em;
+  border-bottom: rgb(3, 19, 35) 0.1em solid;
+}
+.infoTours .toursDiv .pais,
+.infoTours .toursDiv .estadio,
+.infoTours .toursDiv .diaTour {
+  margin-bottom: 0em;
+  text-align: left;
+}
+.infoTours .botonTicketDiv {
+  padding: 2em;
+}
+.infoTours .botonTicketDiv a {
+  text-decoration: none;
+  border-radius: 0.5em;
+  background-color: rgb(3, 19, 35);
+  color: white;
+  text-align: center;
+  font-size: 26px;
+  padding: 0.5em;
+  margin: 0.3em;
+}
+
+.tituloMusica h1 {
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  font-size: 4.5em;
+  text-shadow: 8px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contenedorDeAlbums {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contenedorDeAlbums .albums {
+  padding: 1em;
+  width: 10em;
+}
+.contenedorDeAlbums .albums .añoAlbum {
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+.contenedorDeAlbums .albums .imagenesAlbums {
+  width: 100%;
+}
+.contenedorDeAlbums .albums .botonMasInfo {
+  font-weight: bold;
+  border-radius: 1em;
+  margin-left: 7.8em;
+  margin-top: 0.6em;
+  line-height: 1em;
+}
+.contenedorDeAlbums .spotify {
+  padding: 1em;
+  padding-bottom: 5em;
+  height: 10em;
+  width: 90%;
+}
+
+.tituloTienda h1 {
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  font-size: 4.5em;
+  text-shadow: 8px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.productosContenedor {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-top: 1em;
+  align-items: center;
+}
+.productosContenedor .productos {
+  width: 15em;
+  padding-bottom: 3em;
+}
+.productosContenedor .productos .imagenProducto {
+  height: 11em;
+  width: 9em;
+  margin-bottom: 0.5em;
+}
+.productosContenedor .productos .nombreProducto {
+  margin-bottom: 0rem;
+}
+.productosContenedor .productos .precioProducto {
+  margin-bottom: 1em;
+}
+.productosContenedor .productos .botonCarrito {
+  font-weight: bold;
+  border-radius: 2em;
+}
+.productosContenedor .productos .botonMas {
+  font-weight: bold;
+  border-radius: 2em;
+}
+
+.tituloGaleria h1 {
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  font-size: 4.5em;
+  text-shadow: 8px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.container {
+  padding-right: var(--bs-gutter-x, 0);
+  padding-left: var(--bs-gutter-x, 0);
+}
+.container .contenedorGeneralImg {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+.container .contenedorGeneralImg .row {
+  margin-left: calc(var(--bs-gutter-x) * 0);
+  margin-right: calc(var(--bs-gutter-x) * 0);
+}
+.container .contenedorGeneralImg .row > * {
+  padding-right: calc(var(--bs-gutter-x) * 0);
+  padding-left: calc(var(--bs-gutter-x) * 0);
+}
+.container .contenedorGeneralImg .carousel-item {
+  width: 100%;
+}
+.container .contenedorGeneralImg .contenedorGaleriaImg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  margin-right: 0.1em;
+  height: 25em;
+  align-items: center;
+  overflow: scroll;
+}
+.container .contenedorGeneralImg .contenedorGaleriaImg .contenedorGaleriaImg::-webkit-scrollbar {
+  width: 4px;
+}
+.container .contenedorGeneralImg .contenedorGaleriaImg .contenedorGaleriaImg::-webkit-scrollbar-thumb {
+  background-color: rgba(3, 19, 35, 0.89);
+  border-radius: 5px;
+}
+.container .contenedorGeneralImg .contenedorGaleriaImg .imagenesGaleria {
+  text-align: center;
+}
+.container .contenedorGeneralImg .contenedorGaleriaImg .imagenesGaleria .imagenesGaleriaCon {
+  padding-bottom: 1em;
+  width: 85%;
+}
+
+@media (min-width: 765px) {
+  body {
+    display: grid;
+    grid-template-areas: "header header" "main main" "footer footer";
+  }
+  body body::-webkit-scrollbar {
+    width: 8px;
+  }
+  body body::-webkit-scrollbar-thumb {
+    background-color: rgba(3, 19, 35, 0.89);
+    border-radius: 5px;
+  }
+  header .redes {
+    padding-left: 2em;
+  }
+  header .redes a {
+    padding-right: 1em;
+  }
+  header .redes img {
+    width: 2em;
+  }
+  header .contenedornav li {
+    padding-bottom: 0.5;
+  }
+  header .contenedornav li a {
+    font-size: 20px;
+  }
+  /* HTML INDEX  */
+  .contenedorMainIndex {
+    padding: 1.5em;
+    padding-top: 0em;
+  }
+  .contenedorMainIndex .primeraSeccion {
+    background-color: rgb(210, 223, 230);
+  }
+  .contenedorMainIndex .primeraSeccion h1 {
+    font-size: 3.5em;
+  }
+  .contenedorMainIndex .primeraSeccion h2 {
+    text-align: left;
+    font-size: 2.8rem;
+    padding-left: 2%;
+  }
+  .contenedorMainIndex .primeraSeccion .informacionBts {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .contenedorMainIndex .primeraSeccion .informacionBts iframe {
+    padding-left: 3em;
+    height: 26em;
+    width: 90%;
+  }
+  .contenedorMainIndex .primeraSeccion .informacionBts span {
+    font-weight: bold;
+  }
+  .contenedorMainIndex .primeraSeccion .informacionBts p {
+    word-spacing: 0.8em;
+    padding: 1em;
+    width: 90%;
+    height: 25em;
+  }
+  .contenedorMainIndex .segundaSeccion h2 {
+    text-align: left;
+    font-size: 2.8rem;
+    padding-left: 2%;
+  }
+  .contenedorMainIndex .segundaSeccion .contenedorImagenes {
+    background-color: rgb(210, 223, 230);
+    padding-bottom: 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .contenedorMainIndex .segundaSeccion .contenedorImagenes .imagenesMiembros {
+    width: 14em;
+    background-color: rgb(3, 19, 35);
+    margin: 3em;
+    transition: all;
+    transition-duration: 2s;
+  }
+  .contenedorMainIndex .segundaSeccion .contenedorImagenes .imagenesMiembros:hover {
+    transform: scale(1.2);
+  }
+  /* HTML TOUR */
+  main .tituloTour h1 {
+    font-size: 8em;
+  }
+  main .infoTours {
+    margin-bottom: 8em;
+  }
+  main .infoTours .toursDiv {
+    width: 25%;
+    padding: 1em;
+    border-bottom: rgb(3, 19, 35) 0.1em solid;
+  }
+  /* FOMRULARIO */
+  .formulario .container {
+    max-width: 490px;
+  }
+  .formulario .container form {
+    height: 5em;
+  }
+  .formulario .container form .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 18px;
+  }
+  .formulario .container form .tituloForm {
+    margin-bottom: 0rem;
+  }
+  footer p {
+    font-size: 15px;
+  }
+  footer strong {
+    font-size: 15px;
+  }
+  /* HTML TIENDA */
+  .tituloTienda h1 {
+    font-size: 8em;
+    text-shadow: 8px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .productosContenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 2em;
+    padding-top: 1em;
+  }
+  .productosContenedor .productos {
+    width: 15em;
+    padding-bottom: 3em;
+  }
+  .productosContenedor .productos .imagenProducto {
+    height: 11em;
+    width: 9em;
+    margin-bottom: 0.5em;
+  }
+  .productosContenedor .productos .nombreProducto {
+    margin-bottom: 0rem;
+  }
+  .productosContenedor .productos .botonCarrito {
+    font-weight: bold;
+    border-radius: 2em;
+  }
+  .productosContenedor .productos .botonMas {
+    font-weight: bold;
+    border-radius: 2em;
+  }
+  /* HTML MUSICA */
+  .tituloMusica h1 {
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    font-size: 8em;
+    text-shadow: 8px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .contenedorDeAlbums {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .contenedorDeAlbums .albums {
+    padding: 3em;
+    padding-top: 1em;
+    width: 10em;
+  }
+  .contenedorDeAlbums .spotify {
+    padding-bottom: 2.5em;
+    height: 10em;
+    width: 50%;
+  }
+  /* HTML GALERIA */
+  .tituloGaleria h1 {
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    font-size: 8em;
+    text-shadow: 8px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .contenedorGeneralImg {
+    padding-top: 2em;
+    padding-bottom: 5em;
+  }
+  .contenedorGeneralImg .contenedorGaleriaImg {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    overflow: scroll;
+    height: 45em;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-right: 2em;
+    padding-right: 0em;
+  }
+  .contenedorGeneralImg .contenedorGaleriaImg::-webkit-scrollbar {
+    width: 4px;
+  }
+  .contenedorGeneralImg .contenedorGaleriaImg::-webkit-scrollbar-thumb {
+    background-color: rgba(3, 19, 35, 0.89);
+    border-radius: 5px;
+  }
+  .contenedorGeneralImg .imagenesGaleriaCon {
+    width: 14em;
+    padding: 1em;
+  }
+}
+/*
+h2 {
+    color: black;
+    text-align: center;
+    padding-top: 2%;
+    padding-left: 0%;
+    margin-bottom: 0rem;
+    font-size: 1.3em;
+}*//*# sourceMappingURL=style.css.map */
