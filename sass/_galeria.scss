@@ -26,9 +26,11 @@
             padding-right: calc(var(--bs-gutter-x) * .0);
             padding-left: calc(var(--bs-gutter-x) * .0);
         }
+
         .carousel-item {
             width: 100%;
         }
+
         .contenedorGaleriaImg {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -38,27 +40,24 @@
             height: 25em;
             align-items: center;
             overflow: scroll;
-            
-            .contenedorGaleriaImg::-webkit-scrollbar {
-                width: 4px;
-            }
-        
-            .contenedorGaleriaImg::-webkit-scrollbar-thumb {
-                background-color: rgba(3, 19, 35, 0.89);
-                border-radius: 5px;
-            }
-        
+
             .imagenesGaleria {
                 text-align: center;
-        
+
                 .imagenesGaleriaCon {
                     padding-bottom: 1em;
                     width: 85%;
                 }
             }
         }
+
+        .contenedorGaleriaImg::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .contenedorGaleriaImg::-webkit-scrollbar-thumb {
+            background-color: rgba(3, 19, 35, 0.89);
+            border-radius: 5px;
+        }
     }
 }
-
-
-

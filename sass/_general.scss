@@ -15,17 +15,18 @@ body {
         "header"
         "main"
         "footer";
-    font-size: 20px;
-
-    body::-webkit-scrollbar {
-        width: 5px;
-    }
-
-    body::-webkit-scrollbar-thumb {
-        background-color: rgba(3, 19, 35, 0.89);
-        border-radius: 5px;
-    }
+    font-size: 20px; 
 }
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(3, 19, 35, 0.89);
+    border-radius: 5px;
+}
+
 
 header {
     grid-area: header;

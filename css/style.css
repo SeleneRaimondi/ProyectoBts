@@ -14,10 +14,12 @@ body {
   grid-template-areas: "header" "main" "footer";
   font-size: 20px;
 }
-body body::-webkit-scrollbar {
+
+body::-webkit-scrollbar {
   width: 5px;
 }
-body body::-webkit-scrollbar-thumb {
+
+body::-webkit-scrollbar-thumb {
   background-color: rgba(3, 19, 35, 0.89);
   border-radius: 5px;
 }
@@ -150,7 +152,7 @@ footer strong {
   color: black;
   text-align: center;
   padding-left: 0%;
-  padding-top: 8%;
+  padding-top: 6%;
   margin-bottom: 0rem;
   font-size: 1.3em;
 }
@@ -171,19 +173,22 @@ footer strong {
   padding-bottom: 0.5em;
   padding-top: 0em;
   margin-right: 0.5em;
+  margin-top: 1em;
   width: 90%;
   height: 14em;
   overflow: scroll;
-}
-.primeraSeccion .informacionBts p .parrafoBiografia::-webkit-scrollbar {
-  width: 4px;
-}
-.primeraSeccion .informacionBts p .parrafoBiografia::-webkit-scrollbar-thumb {
-  background-color: rgba(3, 19, 35, 0.89);
-  border-radius: 5px;
+  word-spacing: 0.5em;
 }
 .primeraSeccion .informacionBts p span {
   font-weight: bold;
+}
+.primeraSeccion .informacionBts p::-webkit-scrollbar {
+  width: 4px;
+  height: 0em;
+}
+.primeraSeccion .informacionBts p::-webkit-scrollbar-thumb {
+  background-color: rgba(3, 19, 35, 0.89);
+  border-radius: 5px;
 }
 
 .segundaSeccion h2 {
@@ -385,19 +390,19 @@ footer strong {
   align-items: center;
   overflow: scroll;
 }
-.container .contenedorGeneralImg .contenedorGaleriaImg .contenedorGaleriaImg::-webkit-scrollbar {
-  width: 4px;
-}
-.container .contenedorGeneralImg .contenedorGaleriaImg .contenedorGaleriaImg::-webkit-scrollbar-thumb {
-  background-color: rgba(3, 19, 35, 0.89);
-  border-radius: 5px;
-}
 .container .contenedorGeneralImg .contenedorGaleriaImg .imagenesGaleria {
   text-align: center;
 }
 .container .contenedorGeneralImg .contenedorGaleriaImg .imagenesGaleria .imagenesGaleriaCon {
   padding-bottom: 1em;
   width: 85%;
+}
+.container .contenedorGeneralImg .contenedorGaleriaImg::-webkit-scrollbar {
+  width: 4px;
+}
+.container .contenedorGeneralImg .contenedorGaleriaImg::-webkit-scrollbar-thumb {
+  background-color: rgba(3, 19, 35, 0.89);
+  border-radius: 5px;
 }
 
 @media (min-width: 765px) {
@@ -441,31 +446,29 @@ footer strong {
   .contenedorMainIndex .primeraSeccion h2 {
     text-align: left;
     font-size: 2.8rem;
-    padding-left: 2%;
+    padding-left: 0.5em;
+    padding-bottom: 0.5em;
   }
   .contenedorMainIndex .primeraSeccion .informacionBts {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.2fr 1fr;
     grid-template-rows: 1fr;
   }
   .contenedorMainIndex .primeraSeccion .informacionBts iframe {
-    padding-left: 3em;
-    height: 26em;
+    height: 19em;
     width: 90%;
   }
   .contenedorMainIndex .primeraSeccion .informacionBts span {
     font-weight: bold;
   }
   .contenedorMainIndex .primeraSeccion .informacionBts p {
-    word-spacing: 0.8em;
-    padding: 1em;
     width: 90%;
-    height: 25em;
+    height: 19em;
   }
   .contenedorMainIndex .segundaSeccion h2 {
     text-align: left;
     font-size: 2.8rem;
-    padding-left: 2%;
+    padding-left: 0.5em;
   }
   .contenedorMainIndex .segundaSeccion .contenedorImagenes {
     background-color: rgb(210, 223, 230);
@@ -590,12 +593,20 @@ footer strong {
     text-shadow: 8px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
-  .contenedorGeneralImg {
-    padding-top: 2em;
-    padding-bottom: 5em;
-  }
-  .contenedorGeneralImg .contenedorGaleriaImg {
+  .contenedorGaleriaImg {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    margin-right: 0.1em;
+    height: 35em;
+  }
+  .contenedorGaleriaImg .imagenesGaleriaCon {
+    width: 14em;
+    padding: 1em;
+  }
+}
+/* display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
     overflow: scroll;
@@ -604,26 +615,4 @@ footer strong {
     justify-items: center;
     justify-content: center;
     margin-right: 2em;
-    padding-right: 0em;
-  }
-  .contenedorGeneralImg .contenedorGaleriaImg::-webkit-scrollbar {
-    width: 4px;
-  }
-  .contenedorGeneralImg .contenedorGaleriaImg::-webkit-scrollbar-thumb {
-    background-color: rgba(3, 19, 35, 0.89);
-    border-radius: 5px;
-  }
-  .contenedorGeneralImg .imagenesGaleriaCon {
-    width: 14em;
-    padding: 1em;
-  }
-}
-/*
-h2 {
-    color: black;
-    text-align: center;
-    padding-top: 2%;
-    padding-left: 0%;
-    margin-bottom: 0rem;
-    font-size: 1.3em;
-}*//*# sourceMappingURL=style.css.map */
+    padding-right: 0em;*//*# sourceMappingURL=style.css.map */
