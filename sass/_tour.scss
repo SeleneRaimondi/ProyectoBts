@@ -1,46 +1,55 @@
-.tituloTour {
-    h1 {
-        padding-top: 0.2em;
-        padding-bottom: 0.2em;
-        font-size: 4.5em;
-        text-shadow: 8px 10px rgb(0 0 0 / 10%);
-        text-align: center;
-    }
-}
-
-.infoTours {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-
-    .toursDiv {
-        width: 50%;
-        padding: 1em;
-        border-bottom: rgb(3, 19, 35) 0.1em solid;
-
-        .pais,
-        .estadio,
-        .diaTour {
-            margin-bottom: 0em;
-            text-align: left;
+.mainTour {
+    .tituloTour {
+        h1 {
+            padding-top: 0.2em;
+            padding-bottom: 0.2em;
+            font-size: $fuenteHasta576Px;
+            text-shadow: 8px 10px rgb(0 0 0 / 10%);
+            text-align: $alignTextCenter;
         }
     }
 
-    .botonTicketDiv {
-        padding: 2em;
+    .infoTours {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding-left: 1em;
+        padding-right: 1em;
 
-        a {
-            text-decoration: none;
-            border-radius: 0.5em;
-            background-color: rgb(3, 19, 35);
-            color: white;
-            text-align: center;
-            font-size: 26px;
-            padding: 0.5em;
-            margin: 0.3em;
+        .toursDiv {
+            width: 100%;
+            margin-bottom: 2em;
+            border-bottom: rgb(3, 19, 35) 0.1em solid;
+
+            .pais,
+            .estadio,
+            .diaTour {
+                margin-bottom: 0em;
+                text-align: $alignTextCenter;
+            }
+
+            .pais {
+                font-weight: bold;
+            }
+        }
+
+        .botonTicketDiv {
+            padding: 1em;
+            padding-bottom: 4em;
+            padding-right: 1em;
+
+            a {
+                text-decoration: none;
+                border-radius: 0.5em;
+                background-color: rgb(3, 19, 35);
+                color: $white;
+                text-align: $alignTextCenter;
+                font-size: 26px;
+                padding: 0.5em;
+                margin: 0.3em;
+            }
         }
     }
 }
-

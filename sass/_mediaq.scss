@@ -1,283 +1,388 @@
-@media (min-width:765px) {
-    body {
-        display: grid;
-        grid-template-areas:
-            "header header"
-            "main main"
-            "footer footer";
+    @media (min-width:340px) {
 
-        body::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        body::-webkit-scrollbar-thumb {
-            background-color: rgba(3, 19, 35, 0.89);
-            border-radius: 5px;
-        }
-    }
-
-    header {
-        .redes {
-            padding-left: 2em;
-
-            a {
-                padding-right: 1em;
-            }
-
-            img {
-                width: 2em;
-            }
-        }
-
-        .contenedornav {
-            li {
-                padding-bottom: 0.5;
-
-                a {
-                    font-size: 20px;
+        .mainTour {
+            .tituloTour {
+                h1 {
+                    font-size: $fuente576Px;
                 }
             }
-        }
-    }
 
-    /* HTML INDEX  */
-
-    .contenedorMainIndex {
-        padding: 1.5em;
-        padding-top: 0em;
-
-        .primeraSeccion {
-            background-color: rgb(210, 223, 230);
-
-            h1 {
-                font-size: 3.5em;
-            }
-
-            h2 {
-                text-align: left;
-                font-size: 2.8rem;
-                padding-left: 0.5em;
-                padding-bottom: 0.5em;
-            }
-
-            .informacionBts {
-                display: grid;
-                grid-template-columns: 1.2fr 1fr;
-                grid-template-rows: 1fr;
-
-                iframe {
-                    height: 19em;
-                    width: 90%;
-                }
-
-                span {
-                    font-weight: bold;
-                }
-
-                p {
-                    width: 90%;
-                    height: 19em;
-                }
-            }
-        }
-
-        .segundaSeccion {
-            h2 {
-                text-align: left;
-                font-size: 2.8rem;
-                padding-left: 0.5em;
-            }
-
-            .contenedorImagenes {
-                background-color: rgb(210, 223, 230);
-                padding-bottom: 3%;
+            .infoTours {
                 display: flex;
                 flex-direction: row;
-                align-items: center;
                 flex-wrap: wrap;
-                justify-content: space-evenly;
+                align-items: center;
+                justify-content: center;
+                padding-left: 0.5em;
+                padding-right: 0.5em;
+                margin-bottom: 4em;
 
-                .imagenesMiembros {
-                    width: 14em;
-                    background-color: rgb(3, 19, 35);
-                    margin: 3em;
-                    transition: all;
-                    transition-duration: 2s;
-                }
+                .toursDiv {
+                    width: 45%;
+                    padding: 1em;
+                    padding-left: 0em;
+                    margin-bottom: 4em;
 
-                .imagenesMiembros:hover {
-                    transform: scale(1.2);
-                }
-            }
-        }
-    }
-
-    /* HTML TOUR */
-    main {
-        .tituloTour {
-            h1 {
-                font-size: 8em;
-            }
-        }
-
-        .infoTours {
-            margin-bottom: 8em;
-
-            .toursDiv {
-                width: 25%;
-                padding: 1em;
-                border-bottom: rgb(3, 19, 35) 0.1em solid;
-            }
-        }
-    }
-
-    /* FOMRULARIO */
-
-    .formulario {
-        .container {
-            max-width: 490px;
-
-            form {
-                height: 5em;
-
-                .row {
-                    display: flex;
-                    flex-wrap: wrap;
-                    flex-direction: row;
-                    justify-content: space-evenly;
-                    align-items: center;
-                    font-size: 18px;
-                }
-
-                .tituloForm {
-                    margin-bottom: 0rem;
+                    .pais,
+                    .estadio,
+                    .diaTour {
+                        text-align: left;
+                    }
                 }
             }
         }
+
     }
 
-    footer {
-        p {
-            font-size: 15px;
-        }
 
-        strong {
-            font-size: 15px;
-        }
-    }
+    @media (min-width:576px) {
 
-    /* HTML TIENDA */
-
-    .tituloTienda {
-        h1 {
-            font-size: 8em;
-            text-shadow: 8px 10px rgb(0 0 0 / 10%);
-            text-align: center;
-        }
-    }
-
-    .productosContenedor {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        text-align: center;
-        padding: 2em;
-        padding-top: 1em;
-
-        .productos {
-            width: 15em;
-            padding-bottom: 3em;
-
-            .imagenProducto {
-                height: 11em;
-                width: 9em;
-                margin-bottom: 0.5em;
+        header {
+            .navbar {
+                font-size: 18px;
             }
+        }
 
-            .nombreProducto {
+        /* FORMULARIO */
+
+        .formulario {
+            .container {
+                max-width: 370px;
+                padding-right: 1em;
+                padding-left: 1em;
+            }
+        }
+
+        /* FOOTER */
+
+        footer {
+            line-height: 1rem;
+
+            p {
+                color: white;
+                font-size: 12px;
                 margin-bottom: 0rem;
             }
 
-            .botonCarrito {
-                font-weight: bold;
-                border-radius: 2em;
-            }
-
-            .botonMas {
-                font-weight: bold;
-                border-radius: 2em;
+            strong {
+                color: white;
+                font-size: 12px;
             }
         }
-    }
 
-    /* HTML MUSICA */
+        /* HTML INDEX  */
 
-    .tituloMusica {
-        h1 {
-            padding-top: 0.2em;
-            padding-bottom: 0.2em;
-            font-size: 8em;
-            text-shadow: 8px 10px rgb(0 0 0 / 10%);
-            text-align: center;
-        }
-    }
-
-    .contenedorDeAlbums {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: center;
-
-        .albums {
-            padding: 3em;
-            padding-top: 1em;
-            width: 10em;
-        }
-
-        .spotify {
-            padding-bottom: 2.5em;
-            height: 10em;
-            width: 50%;
-        }
-    }
-
-    /* HTML GALERIA */
-
-    .tituloGaleria {
-        h1 {
-            padding-top: 0.2em;
-            padding-bottom: 0.2em;
-            font-size: 8em;
-            text-shadow: 8px 10px rgb(0 0 0 / 10%);
-            text-align: center;
-        }
-    }
-
-    .contenedorGaleriaImg {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-top: 1em;
-        margin-bottom: 2em;
-        margin-right: 0.1em;
-        height: 35em;
-
-        .imagenesGaleriaCon {
-            width: 14em;
+        .mainIndex {
             padding: 1em;
+            padding-top: 0em;
+
+            .primeraSeccion {
+                background-color: rgb(210, 223, 230);
+
+                h1 {
+                    font-size: 3em;
+                }
+
+                h2 {
+                    font-size: 2.5rem;
+                    padding-top: 1em;
+                    padding-left: 0.5em;
+                    padding-bottom: 0.5em;
+                }
+
+                .informacionBts {
+
+                    iframe {
+                        width: 95%;
+                        height: 20em;
+                    }
+
+                    p {
+                        width: 95%;
+                        height: 16em;
+                    }
+                }
+            }
+
+            .segundaSeccion {
+                h2 {
+                    font-size: 2.5rem;
+                    padding-left: 0.5em;
+                }
+
+                .contenedorImagenes {
+                    background-color: rgb(210, 223, 230);
+                    padding-bottom: 3%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+
+                    .imagenesMiembros {
+                        background-color: rgb(3, 19, 35);
+                        margin: 3em;
+                        margin-right: 2em;
+                        margin-left: 1em;
+                    }
+                }
+            }
+        }
+
+        /* HTML TOUR */
+
+        .mainTour {
+            .tituloTour {
+                h1 {
+                    font-size: $fuente576Px;
+                }
+            }
+        }
+
+        /* HTML GALERIA */
+
+        .mainGaleria {
+            padding: 0em;
+
+            .tituloGaleria {
+                h1 {
+                    font-size: $fuente576Px;
+                }
+            }
+
+            .container {
+                max-width: 85%;
+
+                .contenedorGeneralImg {
+                    .contenedorGaleriaImg {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        height: 40em;
+
+                    }
+                }
+            }
+        }
+
+
+        /* HTML MUSICA */
+
+        .mainMusica {
+            .tituloMusica {
+                h1 {
+                    font-size: $fuente576Px;
+                }
+            }
+
+            .contenedorDeAlbums {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+
+                .albums {
+                    padding-top: 2em;
+                    width: 10em;
+                }
+
+                .spotify {
+                    padding-bottom: 1em;
+                    height: 10em;
+                    width: 45%;
+                }
+            }
+        }
+
+        /* HTML TIENDA */
+        .mainTienda {
+            .productosContenedor {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+        }
+
+    }
+
+
+
+    @media (min-width:950px) {
+        body {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "main main"
+                "footer footer";
+
+            body::-webkit-scrollbar {
+                width: 8px;
+            }
+
+            body::-webkit-scrollbar-thumb {
+                background-color: rgba(3, 19, 35, 0.89);
+                border-radius: 5px;
+            }
+        }
+
+        header {
+            .redes {
+                padding-left: 2em;
+
+                a {
+                    padding-right: 1em;
+                }
+
+                img {
+                    width: 2em;
+                }
+            }
+
+            .contenedornav {
+                li {
+                    padding-bottom: 0.5;
+
+                    a {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        /* HTML INDEX  */
+
+        .mainIndex {
+            .primeraSeccion {
+                h1 {
+                    font-size: 3.5em;
+                }
+
+                h2 {
+                    text-align: left;
+                }
+
+                .informacionBts {
+                    display: grid;
+                    grid-template-columns: 1.2fr 1fr;
+                    grid-template-rows: 1fr;
+
+                    iframe {
+                        height: 19em;
+                        width: 90%;
+                    }
+
+                    p {
+                        width: 90%;
+                        height: 19em;
+                    }
+                }
+            }
+
+            .segundaSeccion {
+                h2 {
+                    text-align: left;
+                }
+
+                .contenedorImagenes {
+
+                    .imagenesMiembros {
+                        transition: all;
+                        transition-duration: 2s;
+                    }
+
+                    .imagenesMiembros:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+
+        /* HTML TOUR */
+
+        .mainTour {
+            .tituloTour {
+                h1 {
+                    font-size: $fuente950Px;
+                }
+            }
+
+            .infoTours {
+                padding-left: 1em;
+
+                .toursDiv {
+                    width: 25%;
+                }
+            }
+
+            .botonTicketDiv {
+                padding-bottom: 5em;
+            }
+        }
+
+        /* HTML TIENDA */
+
+        .mainTienda {
+            .tituloTienda {
+                h1 {
+                    font-size: $fuente950Px;
+                }
+            }
+
+            .productosContenedor {
+                padding: 1em;
+
+                .productos {
+                    padding-bottom: 4.5em;
+                }
+            }
+        }
+
+        /* HTML MUSICA */
+
+        .mainMusica {
+            .tituloMusica {
+                h1 {
+                    padding-top: 0.2em;
+                    padding-bottom: 0em;
+                    margin-bottom: 0em;
+                    font-size: 8em;
+                }
+            }
+
+            .contenedorDeAlbums {
+
+                .albums {
+                    padding: 3em;
+                    padding-left: 6em;
+                    padding-bottom: 1.5em;
+                }
+
+                .spotify {
+                    padding-right: 6em;
+                    padding-bottom: 0em;
+                    width: 45%;
+                }
+            }
+        }
+
+
+        /*HTML GALERIA */
+        .mainGaleria {
+            .tituloGaleria {
+                h1 {
+                    font-size: $fuente950Px;
+                }
+            }
+
+            .container {
+                max-width: 80%;
+
+                .contenedorGeneralImg {
+                    .contenedorGaleriaImg {
+                        height: 40em;
+                    }
+                }
+            }
         }
     }
-}
-
-
-/* display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
-    overflow: scroll;
-    height: 45em;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    margin-right: 2em;
-    padding-right: 0em;*/

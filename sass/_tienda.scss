@@ -1,50 +1,51 @@
-.tituloTienda {
-    h1 {
-        padding-top: 0.2em;
-        padding-bottom: 0.2em;
-        font-size: 4.5em;
-        text-shadow: 8px 10px rgb(0 0 0 / 10%);
-        text-align: center;
+.mainTienda {
+    .tituloTienda {
+        h1 {
+            padding-top: 0.2em;
+            padding-bottom: 0.2em;
+            font-size: $fuenteHasta576Px;
+            text-shadow: 8px 10px rgb(0 0 0 / 10%);
+            text-align: $alignTextCenter;
+        }
     }
-}
 
-.productosContenedor {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    text-align: center;
-    padding-top: 1em;
-    align-items: center;
+    .productosContenedor {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: $alignTextCenter;
+        padding-top: 1em;
 
-    .productos {
-        width: 15em;
-        padding-bottom: 3em;
+        .productos {
+            width: 15em;
+            padding-bottom: 4em;
 
-        .imagenProducto{
-            height: 11em;
-            width: 9em;
-            margin-bottom: 0.5em;
+            .imagenProducto {
+                height: 11em;
+                width: 9em;
+                margin-bottom: 0.5em;
+            }
+
+            .nombreProducto {
+                margin-bottom: 0rem;
+                font-weight: bold;
+            }
+
+            .precioProducto {
+                margin-bottom: 1em;
+            }
+
+            .botonCarrito {
+                font-weight: bold;
+                border-radius: 2em;
+            }
+
+            .botonMas {
+                font-weight: bold;
+                border-radius: 2em;
+            }
         }
-
-        .nombreProducto {
-            margin-bottom: 0rem;
-        }
-
-        .precioProducto {
-            margin-bottom: 1em;
-        }
-
-        .botonCarrito {
-            font-weight: bold;
-            border-radius: 2em;
-        }
-
-        .botonMas {
-            font-weight: bold;
-            border-radius: 2em;
-        }
-
-
     }
 }
