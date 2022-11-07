@@ -212,7 +212,7 @@ footer strong {
 .mainIndex .segundaSeccion .contenedorImagenes .imagenesMiembros .miembrosFotos {
   width: 100%;
 }
-.mainIndex .segundaSeccion .contenedorImagenes .imagenesMiembros .nombres {
+.mainIndex .segundaSeccion .contenedorImagenes .imagenesMiembros .nombres, .mainIndex .segundaSeccion .contenedorImagenes .imagenesMiembros .fechas {
   width: 100%;
   margin-bottom: 0rem;
   text-align: center;
@@ -220,11 +220,7 @@ footer strong {
   color: white;
 }
 .mainIndex .segundaSeccion .contenedorImagenes .imagenesMiembros .fechas {
-  width: 100%;
-  margin-bottom: 0rem;
-  text-align: center;
   font-size: 0.8em;
-  color: white;
 }
 
 .mainTour .tituloTour h1 {
@@ -424,7 +420,7 @@ footer strong {
     justify-content: center;
     padding-left: 0.5em;
     padding-right: 0.5em;
-    margin-bottom: 4em;
+    margin-bottom: 1em;
   }
   .mainTour .infoTours .toursDiv {
     width: 45%;
@@ -534,6 +530,7 @@ footer strong {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    padding-bottom: 3em;
   }
   .mainMusica .contenedorDeAlbums .albums {
     padding-top: 2em;

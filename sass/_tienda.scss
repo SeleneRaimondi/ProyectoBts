@@ -38,13 +38,11 @@
             }
 
             .botonCarrito {
-                font-weight: bold;
-                border-radius: 2em;
+                @include font (bold, 2em)
             }
 
             .botonMas {
-                font-weight: bold;
-                border-radius: 2em;
+                @include font (bold, 2em)
             }
         }
     }

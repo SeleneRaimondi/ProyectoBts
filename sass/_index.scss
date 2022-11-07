@@ -97,11 +97,8 @@
                 }
 
                 .fechas {
-                    width: 100%;
-                    margin-bottom: 0rem;
-                    text-align: $alignTextCenter;
+                    @extend .nombres;
                     font-size: 0.8em;
-                    color: $white;
                 }
             }
         }
